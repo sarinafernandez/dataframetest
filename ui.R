@@ -6,12 +6,12 @@ shinyUI(fluidPage(
   fluidRow(
     
     column(3,
-           fileInput("file", label = h4(".csv file input"))),
+           fileInput("file", label = h4(".csv data.frame file input"))),
           br(),
     
     column(3,
            br(),
-           actionButton("action", label = "Display data structure")
+           actionButton("actionButton", label = "Display data structure")
           )
 )
 ))
