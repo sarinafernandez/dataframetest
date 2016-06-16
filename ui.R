@@ -11,7 +11,7 @@ shinyUI(fluidPage(
     
     column(3,
            br(),
-           actionButton("actionButton", label = "Display data structure")
+           actionButton("actionButton", label = "Display str output")
           )
 )
 ))
