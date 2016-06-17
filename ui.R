@@ -1,30 +1,16 @@
 library(shiny)
 
 shinyUI(fluidPage(
-  titlePanel("Uploading Files"),
+  titlePanel("Data Structure"),
   sidebarLayout(
     sidebarPanel(
       fileInput('file1', 'Choose CSV File',
-                accept=c('text/csv', 'text/comma-separated-values,text/plain', '.csv')),
-      tags$hr(),
-      # checkboxInput('header', 'Header', TRUE),
-      # radioButtons('sep', 'Separator',
-                  # c(Comma=',',
-                  #   Semicolon=';',
-                  #   Tab='\t'),
-                  #  ','),
-      # radioButtons('quote', 'Quote',
-                 #  c(None='',
-                 #    'Double Quote'='"',
-                 #    'Single Quote'="'"),
-                 #  '"'),
-      actionButton('clicks', label = "Display data structure")
-      
-      
+                accept=c('text/csv', 
+                         'text/comma-separated-values,text/plain', 
+                         '.csv')),
+      actionButton("clicks", "Display data structure")
     ),
-    mainPanel(
-      tableOutput('contents')
-      
-    )
-  )
+  
+    mainPanel(tableOutput('contents'))
 ))
+)
