@@ -5,7 +5,7 @@ shinyServer(function(input, output) {
     
   })
   
-  output$contents <- renderTable({
+  output$stats <- renderPrint({
     data <- eventReactive(input$clicks, {input$file1})
     # input$file1 will be NULL initially. After the user selects
     # and uploads a file, it will be a data frame with 'name',

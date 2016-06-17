@@ -11,6 +11,6 @@ shinyUI(fluidPage(
       actionButton("clicks", "Display data structure")
     ),
   
-    mainPanel(tableOutput('contents'))
+    mainPanel(verbatimTextOutput('stats'))
 ))
 )
